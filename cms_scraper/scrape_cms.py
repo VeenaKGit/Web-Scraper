@@ -6,7 +6,7 @@ import csv
 source = requests.get('http://coreyms.com').text
 soup = BeautifulSoup(source, 'html5lib')
 
-csv_file = open('cms_scrape.csv', 'w')
+csv_file = open('cms_scraper/cms_scrape.csv', 'w')
 csv_writer = csv.writer(csv_file)
 csv_writer.writerow(['headline', 'summary', 'video_link'])
 
